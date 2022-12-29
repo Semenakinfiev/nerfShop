@@ -1,0 +1,158 @@
+@import './../../styles/variables';
+
+
+.home {
+    padding: 20px 0;
+}
+
+.slide_1 {
+    background-color: rgb(237,94,16);
+    border: 1px solid rgb(237,94,16);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_part_slide1 {
+    padding: 0;
+    margin: 0;
+    width: 443px;
+    height: 404px;
+    img {
+        width: 443px;
+        height: 409px;
+    }
+}
+
+.right_part_slide1 {
+    .big_text {
+        font-size: 30px;
+        color: $whiteColor;
+        width: 385px;
+        line-height: 45px;
+        margin: 100px 0 20px 0;
+    }
+    .small_text {
+        font-size: 20px;
+        font-weight: bold;
+        color: $whiteColor;
+        width: 400px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0;
+    }
+    .button1 {
+        margin: 50px 0 0px 100px;
+        background-color: rgb(33,153,213);
+        border: 1px solid rgba(33,153,213);
+        border-radius: 20px;
+        color: $whiteColor;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 35px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(33,153,213, .8);
+        }
+    }
+}
+
+.slide_2 {
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    background-image: url('./../../../public/assets/sliders/slide2/backgrownd.png');
+}
+
+.left_part_slide2 {
+    width: 530px;
+    height: 405px;
+    img {
+        width: 530px;
+        height: 409px;
+    }
+}
+
+.right_part_slide2 {
+    .title {
+        margin-top: 30px;
+        img {
+            width: 415px;
+            height: 80px;
+        }
+    }
+
+    .discription {
+        font-size: 25px;
+        color: $whiteColor;
+        width: 385px;
+        line-height: 40px;
+        margin: 50px 0 20px 30px;
+    }
+    .button2 {
+        margin: 50px 0 0px 230px;
+        background-color: rgb(33,153,213);
+        border: 1px solid rgba(33,153,213);
+        border-radius: 20px;
+        color: $whiteColor;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 35px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(33,153,213, .8);
+        }
+    }
+}
+
+.slide_3 {
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    background-image: url('./../../../public/assets/sliders/slide3/backgrownd_gun.png');
+}
+
+.left_part_slide3 {
+    width: 500px;
+    height: 345px;
+    padding: 50px 30px;
+    img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.right_part_slide3 {
+    .title3 {
+        margin-top: 30px;
+        img {
+            width: 475px;
+            height: 150px;
+        }
+    }
+
+    .discription1 {
+        font-size: 25px;
+        color: $whiteColor;
+        width: 385px;
+        line-height: 25px;
+        margin: 25px 0 20px 30px;
+    }
+    .button3 {
+        margin: 25px 0 0px 230px;
+        background-color: rgb(33,153,213);
+        border: 1px solid rgba(33,153,213);
+        border-radius: 20px;
+        color: $whiteColor;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 35px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(33,153,213, .8);
+        }
+    }
+}

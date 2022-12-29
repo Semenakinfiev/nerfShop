@@ -1,0 +1,25 @@
+@import '~normalize.css';
+@import './variables.scss';
+
+*{
+    font-family: "Inter", system-ui;
+}
+
+body {
+    background-color: rgba(231, 246, 255, 1);
+    box-sizing: border-box;
+}
+
+.app {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    background-color: $whiteColor;
+    border: 1px solid $whiteColor;
+    border-radius: 20px;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
