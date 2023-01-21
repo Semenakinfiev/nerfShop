@@ -5,7 +5,7 @@
 .sliders {
     width: 960px;
     height: 450px;
-    margin: 0 auto;
+    margin: 30px auto 30px auto;
     user-select: none;
     display: flex;
     align-items: center;
@@ -20,6 +20,10 @@
 
 .allSlidersContainer {
     display: flex;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .arrow {

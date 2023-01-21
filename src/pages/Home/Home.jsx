@@ -1,11 +1,16 @@
 import s from './Home.module.scss';
-import Header from '../../shared/Header/Header.jsx';
 import Slider from './components/slider/Slider';
+import React from 'react';
+import Card from './components/card/Card.jsx';
+import { MyContext } from './../../App';
 
 function Home() {
+
+  const items = React.useContext(MyContext);
+  const [valueInput, setValueInput] = React.useState('');
+
   return (
     <div className={s.home}>
-      <Header />
       <Slider>
         <div className={s.slide_1}>
           <div className={s.left_part_slide1}>
@@ -29,7 +34,7 @@ function Home() {
               <img src="/assets/sliders/slide2/title.png" alt="title" />
             </div>
             <h2 className={s.discription}>
-              PLAY FORTNITE IN REAL LIFE WITH THE PUMP-ACTION MEGA BLASTING!
+              PLAY FORTNITE IN REAL LIFE WITH THE PUMP-ACTION!
             </h2>
             <button className={s.button2}>BUY NOW</button>
           </div>
@@ -51,6 +56,29 @@ function Home() {
           </div>
         </div>
       </Slider>
+
+      <div className={s.products}>
+            <div className={s.hightBlock}>
+                <h2 className={s.text}>ALL GUNS</h2>
+                <div className={s.search}>
+                    <img src='/assets/products/search.svg' alt='поиск'/>
+                    <input className={s.searchInput} value={valueInput}  onChange={(event) => setValueInput(event.target.value)} type='text'/>
+                </div>
+            </div>
+            <div className={s.cardsBlock}>
+                {
+               items.guns.filter((elem) => {
+                    return elem.title.toLowerCase().includes(valueInput.toLowerCase())
+                  }).map((item, id) => (
+                   <Card
+                    key={id}
+                    title={item.title}
+                    price={item.price}
+                    imgUrl={item.ImgUrl}
+                    />
+                ))}
+               </div>
+        </div>
     </div>
   );
 }

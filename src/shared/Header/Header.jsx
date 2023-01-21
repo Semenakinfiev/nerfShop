@@ -1,7 +1,10 @@
 import s from './Header.module.scss';
+import React from 'react';
 
 
-function Header() {
+
+function Header({ onClickOpenCart }) {
+
    return  (
     <header className={s.header}>
         <div className={s.headerRightPart}>
@@ -19,7 +22,7 @@ function Header() {
         </div>
         <div className={s.headerLeftPart}>
             <div className={s.cart}>
-                <img className={s.imgCart}  src='/assets/header/cart.svg' alt='cart' />
+                <img onClick={onClickOpenCart} className={s.imgCart}  src='/assets/header/cart.svg' alt='cart' />
                 <p className={s.sumCart}>1206 руб.</p>
             </div>
             <img className={s.imgHeart} src='/assets/header/heart.svg' alt='heart' />

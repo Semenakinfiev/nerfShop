@@ -27,7 +27,7 @@ React.useEffect(() => {
 const handlerLeftArrowClick = () => {
   setOffset((currentOffset) => {
     const newOffset = currentOffset + PAGE_WIDTH;
-    console.log(newOffset)
+
     return Math.min(newOffset, 0);
   })
 }
@@ -35,8 +35,9 @@ const handlerLeftArrowClick = () => {
 const handlerRightArrowClick = () => {
       setOffset((currentOffset) => {
         const newOffset = currentOffset - PAGE_WIDTH;
-        console.log(newOffset)
-        return newOffset;
+        const maxOffset = -(PAGE_WIDTH * (pages.length-1));
+
+        return Math.max(newOffset, maxOffset);
       })
 }
 

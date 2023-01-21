@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Бластер Nerf Mega Megalodon",
+        "price": 4590,
+        "ImgUrl": "https://i.ebayimg.com/images/g/RTwAAOSwhpleaEyz/s-l300.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Nerf Zombie Strike Survival System Scravenger",
+        "price": 9890,
+        "ImgUrl": "https://nerfblaster.ru/image/cache/catalog/0011/003/01-300x300.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Бластер Nerf Fortnite AR-L Elite",
+        "price": 4990,
+        "ImgUrl": "https://www.totoys.com.pe/wp-content/uploads/2020/11/17312460_1-1-300x300.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Бластер Nerf Элит Каунтерстрайк Nerf Rapidstrike",
+        "price": 12990,
+        "ImgUrl": "https://ae01.alicdn.com/kf/H5550fccdd4d943bf85df0babc8d90c70I.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Бластер Нерф Элит Рафкат",
+        "price": 4290,
+        "ImgUrl": "https://avatars.mds.yandex.net/get-mpic/4615588/img_id6559429425821359688.jpeg/300x300"
+    },
+    {
+        "id": 6,
+        "title": "Бластер Nerf Disruptor - Нерф Дизраптор",
+        "price": 2490,
+        "ImgUrl": "https://cdn1.ozone.ru/s3/multimedia-2/6387696818.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Бластер Nerf Fortnite SP-L Elite (Спрингер)",
+        "price": 2690,
+        "ImgUrl": "https://i.ebayimg.com/images/g/JYMAAOSw-6dgcFqo/s-l300.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Бластер Нерф Элит Риталиэйтор",
+        "price": 7990,
+        "ImgUrl": "http://s4.eshoper.ru/ny/9d46a6f44f7af408f75e6fb1ad3bf4c6.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Бластер Nerf N-Strike Longstrike (Лонгстрайк) CS-6",
+        "price": 15990,
+        "ImgUrl": "https://i.ebayimg.com/images/g/t0EAAOSwNalfJwZy/s-l300.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Бластер Nerf Элит Рино Файр (Rhino-Fire)",
+        "price": 69990,
+        "ImgUrl": "https://topcomputer.ru/upload/resize_cache/images/35/400_300_140cd750bba9870f18aada2478b24840a/35e39ea016f6607ec89a2ae464581c89.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Бластер Нерф Элит Рэмпейдж (Nerf Rampage)",
+        "price": 9990,
+        "ImgUrl": "https://nerfblaster.ru/image/cache/catalog/elite/Rampage/RampageFrontalShot-300x300.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Большая бензопила Нерф Зомби Страйк",
+        "price": 18990,
+        "ImgUrl": "https://myblaster.ru/image/cache/catalog/05new/013/benzopila-nasadka-nerf-zombi-strajk-survival-system-twinslice-foto%281%29-540x450.jpg"
+    }
+]
