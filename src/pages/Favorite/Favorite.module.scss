@@ -1,0 +1,23 @@
+@import './../../styles/variables';
+
+
+.favorite {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hightBlock {
+    display: flex;
+
+    .leftArrow {
+        margin-right: 30px;
+        cursor: pointer;
+    }
+}
+
+.cardBlock {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 40px;
+    min-height: 400px;
+}

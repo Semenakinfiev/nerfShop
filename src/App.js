@@ -1,6 +1,7 @@
 
 import React from 'react';
 import axios from 'axios';
+import Favorite from './pages/Favorite/Favorite';
 import Home from './pages/Home/Home';
 import Header from './shared/Header/Header';
 import Cart from './pages/Home/components/cart/Cart';
@@ -12,6 +13,7 @@ function App() {
   const [guns, setGuns] = React.useState([]);
   const [gunsForCart, setGunsForCart] = React.useState([]);
   const [openCart, setOpenCart] = React.useState(false);
+  const [favorite, setFavorite] = React.useState(false);
 
 
   React.useEffect(() => {
@@ -37,6 +39,10 @@ function App() {
     setOpenCart(!openCart);
   }
 
+  const onClickOpenFavorites = () => {
+    setFavorite(!favorite);
+  }
+
   const onAddToCart = (obj) => {
     axios.post(`https://63878d8fd9b24b1be3f4047c.mockapi.io/cart`, obj)
     // .then(res =>setGunsForCart(prev => [...prev, res.data]))
@@ -58,8 +64,13 @@ function App() {
                     gunsForCart={gunsForCart}
                     onDeleteCartGun={onDeleteCartGun}
                     />}
-      <Header onClickOpenCart={onClickOpenCart}/>
+      <Header 
+      onClickOpenCart={onClickOpenCart}
+      onClickOpenFavorites={onClickOpenFavorites}
+      
+      />
       <Home />
+      {/* <Favorite /> */}
       </div>
      </div>
     </MyContext.Provider>

@@ -14,7 +14,7 @@ function Card({ title, price, imgUrl }) {
   }
 
   const onClickAdd = () => {
-    contextCard.onAddToCart({title, price, imgUrl});
+    contextCard.onAddToCart({ title, price, imgUrl });
     setChecked(!checked);
   }
 

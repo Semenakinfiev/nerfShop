@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-function Header({ onClickOpenCart }) {
+function Header({ onClickOpenCart, onClickOpenFavorites }) {
 
    return  (
     <header className={s.header}>
@@ -25,7 +25,7 @@ function Header({ onClickOpenCart }) {
                 <img onClick={onClickOpenCart} className={s.imgCart}  src='/assets/header/cart.svg' alt='cart' />
                 <p className={s.sumCart}>1206 руб.</p>
             </div>
-            <img className={s.imgHeart} src='/assets/header/heart.svg' alt='heart' />
+            <img onClick={onClickOpenFavorites} className={s.imgHeart} src='/assets/header/heart.svg' alt='heart' />
             <img className={s.imgPerson} src='/assets/header/person.svg' alt='person' />
         </div>
     </header>)

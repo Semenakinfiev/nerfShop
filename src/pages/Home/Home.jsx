@@ -2,7 +2,7 @@ import s from './Home.module.scss';
 import Slider from './components/slider/Slider';
 import React from 'react';
 import Card from './components/card/Card.jsx';
-import { MyContext } from './../../App';
+import { MyContext } from '../../App';
 
 function Home() {
 
